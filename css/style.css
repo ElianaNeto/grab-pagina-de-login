@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+body {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Montserant", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  background-color: #fdfbfb;
+  color: gray;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  width: 210px;
+  outline: none;
+  margin-top: 20px;
+}
+
+form {
+  background-color: #4e5bee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 58px;
+  height: 100%;
+  text-align: center;
+  width: 400px;
+}
+
+input {
+  background-color: #4e5bee;
+  padding: 12px 15px;
+  margin: 8px 0px;
+  width: 250px;
+  border-radius: 20px;
+  border-color: white;
+  border: 2px solid white;
+  outline: none;
+  color: white;
+  padding-left: 25px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.imagem {
+  background-color: #ffffff;
+  float: right;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  form {
+    background-color: #4e5bee;
+    width: 200px;
+    margin-left: 80px;
+  }
+  .imagem {
+    display: none;
+  }
+  input {
+    border-radius: 20px;
+    width: 190px;
+  }
+  button {
+    width: 150px;
+  }
+}
